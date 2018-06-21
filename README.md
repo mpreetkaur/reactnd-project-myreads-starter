@@ -4,4 +4,4 @@
 ## Getting Started
 When the app is loaded, it will display 7 books _by default_. User can click on the green colored drop-down button on bottom-right corner of every book to change the category of book as 'read', 'currently reading' and 'wants to read'.
 
-<p><img src='images/gifR.gif' width="500px" height="500px"/></p>
+<p><img src='images/gifR.gif' width="400px" height="400px"/></p>
