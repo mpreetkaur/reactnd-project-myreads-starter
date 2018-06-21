@@ -23,24 +23,11 @@ class BooksApp extends React.Component {
     })
   }
   changeShelf = (book, shelf) => {
-    BooksAPI.update(book, shelf)
-        .then(
-          BooksAPI.getAll().then(books => {
-            this.setState({books: books, loading: false})
-          })
-            // this.setState((state) => ({
-            //     books: state.books.map(b => {
-            //         if (b.id === book.id) {
-            //             b.shelf = shelf;
-            //             return b;
-            //         }else {
-            //           return b
-            //         }
-            //         this.state.loading = false  
-            //     }),
-            // }))
-        )
-        console.log(this.state.books)
+    BooksAPI.update(book, shelf).then(() => {
+      BooksAPI.getAll().then(books => {
+        this.setState({books: books, loading: false})
+      })
+    })
 };
 
 
@@ -54,7 +41,7 @@ class BooksApp extends React.Component {
         <Route path="/" exact render={() => (
           <div>
               <div className="list-books-title">
-                  <h1>Personal Library</h1>
+                  <h1>MyReads</h1>
               </div>
               {
                 <BookShelfList
@@ -66,8 +53,8 @@ class BooksApp extends React.Component {
               }
           </div>
         )}/>
-      <Route path='/search' render={({history})=>(
-        <Search changeShelf={this.changeShelf} history={history} previousBooks={currentlyReading.concat(wantToRead, read)} />
+      <Route path='/search' render={()=>(
+        <Search changeShelf={this.changeShelf} previousBooks={this.state.books} />
       )}/>
     </div>
 )
