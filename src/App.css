@@ -173,5 +173,6 @@ body, .app {
   font-size: 0.8em;
 }
 .errorImg{
-  padding: 200px 0px 0px 450px
+  width: 400px;
+  height: 400px
 }

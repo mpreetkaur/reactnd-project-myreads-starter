@@ -48,7 +48,7 @@ class Search extends Component {
                         
                     </ol>
                 </div>
-                {!this.state.searchedBooks.length && <img className='errorImg' src='https://webmarketingschool.com/wp-content/uploads/2018/03/nojobsfound.png' alt='error'/>}
+                {!this.state.searchedBooks.length && <img className='errorImg' src='http://images.clipartpanda.com/search-png-white-3D-Women-Search-03.png' alt='error'/>}
             
         </div>
         )
