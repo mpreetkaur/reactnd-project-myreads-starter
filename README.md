@@ -14,4 +14,4 @@ User can search for the bppks by clicking on the '+' signed button at bottom-rig
 - Run _npm start_ in your terminal(this will open page on your browser).
 - You can use the Library as you want to add or remove books as shown below.
 
-<p><img src='images/gif2' width="400px" height="400px"/></p>
+<p><img src='images/gif2.gif' width="400px" height="400px"/></p>
