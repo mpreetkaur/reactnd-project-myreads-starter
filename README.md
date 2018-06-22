@@ -7,7 +7,7 @@ When the app is loaded, it will display 7 books _by default_. User can click on 
 <p><img src='images/gifR.gif' width="400px" height="400px"/></p>
 
 ## Search Books
-User can search for the bppks by clicking on the '+' signed button at bottom-right of page which takes user to the search page and user can search for books in 'search bar'. and can add books to their library the same way used to change books library.
+User can search for the books by clicking on the '+' signed button at bottom-right of page which takes user to the search page and user can search for books in 'search bar'. and can add books to their library, the same way used to change books library.
 
 ## Installation
 - Clone this git repository.
