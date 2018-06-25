@@ -32,11 +32,11 @@ class Search extends Component {
     render (){
         return(
             <div className="search-books">
-            <div className="search-books-bar">
-                <Link className="close-search" to="/">Close</Link>
-                <div className="search-books-input-wrapper">
-                    <input type="text" placeholder="Search by title or author" onChange={this.searchBook}/>
-                </div>
+                <div className="search-books-bar">
+                    <Link className="close-search" to="/">Close</Link>
+                    <div className="search-books-input-wrapper">
+                        <input type="text" placeholder="Search by title or author" onChange={this.searchBook}/>
+                    </div>
                 </div>
                 <div className="search-books-results">
                     <ol className="books-grid">
@@ -45,12 +45,10 @@ class Search extends Component {
                                 <Book book={book} changeShelf={this.props.changeShelf}/>
                             </li>
                         ))}
-                        
                     </ol>
                 </div>
                 {!this.state.searchedBooks.length && <img className='errorImg' src='http://images.clipartpanda.com/search-png-white-3D-Women-Search-03.png' alt='error'/>}
-            
-        </div>
+            </div>
         )
     }
 }
