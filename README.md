@@ -9,6 +9,7 @@ When the app is loaded, it will display 7 books _by default_. User can click on 
 ## Search Books
 User can search for the books by clicking on the '+' signed button at bottom-right of page which takes user to the search page and user can search for books in 'search bar'. and can add books to their library the same way used to change books library.
 
+_[ClICK FOR DEMO](https://festive-hamilton-e29d3f.netlify.com/)_
 ## Installation
 - Clone this git repository.
 - Change directory to this project directory
